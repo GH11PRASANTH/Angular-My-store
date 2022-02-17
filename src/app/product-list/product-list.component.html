@@ -1,6 +1,13 @@
-<div style="background-color:orange;">
+<div style="background-color:brown;">
   <h2>Products</h2>
-
+<style>
+  td{
+    text-align:center;
+  }
+  product{
+    color:white;
+  }
+</style>
   <table border="3px" style="width:100%">
     <tr>
       <th>Product ID</th>
@@ -9,10 +16,10 @@
       <th>Quantity</th>
     </tr>
     <tr *ngFor="let product of products">
-      <td style="text-align:center;">{{ product.productId }}</td>
+      <td >{{ product.productId }}</td>
       <td>{{ product.productName }}</td>
-      <td style="text-align:center;">{{ product.price }}</td>
-      <td style="text-align:center;">{{ product.quantity }}</td>
+      <td >{{ product.price }}</td>
+      <td >{{ product.quantity }}</td>
     </tr>
   </table>
 </div>
